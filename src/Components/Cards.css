@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('../img/andy-holmes-rCbdp8VCYhQ-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+.cards{
+  background-color: rgba(110, 42, 165, 0.527);
+  width: 80%;
+  padding: 20px ;
+  margin: 20px auto;
+  align-items: center;
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.card{
+  
+  width: 310px;
+  height: 500px;
+  margin-bottom: 30px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: thistle;
+
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  
+}
+
+@media only screen and (max-width: 770px){
+  .cards{
+    justify-content: center;
+  }
+}
+
+
+.photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 300px;
+    border: 1px solid rgb(0, 255, 98);
+  
+}
+
+.photo h2{
+  font-size: 25px;
+  font-weight:bold;
+  text-align: center;
+  color: rgb(186, 5, 192);
+  
+padding: 10px;
+  width: 250px;
+  
+  
+ 
+  
+  
+}
+
+.name{
+  background-color: rgba(0, 0, 0, 0.445);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  position: relative;
+  bottom: 80px;
+  justify-content: center;
+}
+
+img{
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+}
+
+.descricao{
+  background-color: violet;
+  width: 90%;
+  height: 130px;
+
+  text-align: left;
+  margin-top: 30px;
+  
+}
+
+.descricao ul{
+
+  margin-left: 30px ;
+}
