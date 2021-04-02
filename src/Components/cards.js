@@ -25,31 +25,37 @@ function Cards() {
 
 
   return (
-    <div className="cards">
-      {personagens.map((item)=>{
-        return (
-          <div className="card" key={item.id} >
-            <div className="photo">
-                <img src={item.img_url}/>
+    <div>
+      <header>
+          <h1>Final Space API</h1>
+        </header>
 
-                <div className="name">
-                <h2>{item.name}</h2>
-                </div>
-               
-            </div>
-            
-            <p>{item.species}</p>
+        <div className="cards">
+        
+          {personagens.map((item)=>{
+            return (
+              <div className="card" key={item.id} >
+                <div className="photo">
+                    <img src={item.img_url}/>
 
-            <div className="descricao">
+                    <div className="name">
+                    <h2>{item.name}</h2>
+                    </div>
                   
-                  <br/>
-                    <h4>Abilities</h4>
-                    <ul>
-                      {item.abilities.map((a)=>{
-                        return (
-                          <li>{a}</li>
-                        )
-                      })}
+                </div>
+                
+                <p>{item.species}</p>
+
+                <div className="descricao">
+                      
+                      <br/>
+                        <h4>Abilities</h4>
+                        <ul>
+                          {item.abilities.map((a)=>{
+                            return (
+                              <li>{a}</li>
+                            )
+                          })}
                     </ul>
             </div>
             
@@ -57,6 +63,8 @@ function Cards() {
         )
       })}
     </div>
+    </div>
+    
   )
 }
 
