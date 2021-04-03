@@ -1,11 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Roboto:wght@100;700&display=swap');
-
-/*
-font-family: 'New Tegomin', serif;
-font-family: 'Roboto', sans-serif;
-*/
-
 
 *{
   padding: 0;
@@ -14,9 +7,9 @@ font-family: 'Roboto', sans-serif;
 }
 
 body{
-  background-image: url('../img/andy-holmes-rCbdp8VCYhQ-unsplash.jpg');
+  /*background-image: url('../img/andy-holmes-rCbdp8VCYhQ-unsplash.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
 
   font-family: 'Roboto', sans-serif;
   
@@ -34,99 +27,63 @@ header{
   padding: 15px 0;
 }
 
-.cards{
-  background-color: rgba(110, 42, 165, 0.527);
-  width: 80%;
-  padding: 20px ;
-  margin: 20px auto;
-  
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
 
+
+.cards{
+  
+  border: 1px solid red;
+  padding: 10%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+  column-gap: 45px;
+  row-gap: 60px;
+  
+}
 
 .card{
-  
-  width: 310px;
-  height: 500px;
-  margin-bottom: 30px;
-  
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: thistle;
-
-  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
-  
-}
-
-@media only screen and (max-width: 770px){
-  .cards{
-    justify-content: center;
-  }
-}
-
-
-.photo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-top: 5px;
-    height: 300px;
-    border: 1px solid rgb(0, 255, 98);
-  
-}
-
-.photo h2{
-  font-size: 25px;
-  font-weight:bold;
-  text-align: center;
-  color: rgb(186, 5, 192);
-  
-  padding: 10px;
-  width: 250px;
-  
-  
- 
-  
-  
-}
-
-.name{
-  background-color: rgba(0, 0, 0, 0.445);
-  width: 100%;
-  height: 70px;
-  display: flex;
-  position: relative;
-  bottom: 80px;
   justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+
+  border: 1px solid red;
 }
 
-img{
-  border-radius: 5px;
-  margin-bottom: 10px;
 
+.perso{
+  border: 1px solid red;
+  width: 300px;
+  height: 80px;
+  margin-bottom: 5px;
 }
+
+.perso h2{
+  font-size: 18px;
+  
+}
+
+.card ul{
+  list-style: none;
+}
+
+.card ul li{
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+
 
 .descricao{
-  background-color: rgb(231, 122, 245);
-  width: 90%;
-  height: 130px;
+  background-color: rosybrown;
 
-  text-align: left;
-  margin-top: 30px;
-  
+  height: 200px;
 }
 
-.descricao ul{
+.descricao h4{
+  margin: 10px 0;
+  padding-top: 10px;
   
-  margin-left: 35px ;
-}
-
-.descricao ul li{
-  font-size: 16px;
-  font-weight: bold;
 }

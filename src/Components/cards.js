@@ -38,18 +38,19 @@ function Cards() {
                 <div className="photo">
                     <img src={item.img_url}/>
 
-                    <div className="name">
-                    <h2>{item.name}</h2>
+                    <div className="perso">
+                      <h2>{item.name}</h2>
+                      <p>{item.species}</p>
                     </div>
                   
                 </div>
                 
-                <p>{item.species}</p>
+                
 
                 <div className="descricao">
                       
-                      <br/>
-                        <h4>Abilities</h4>
+                     
+                        <h4> ABILITIES</h4>
                         <ul>
                           {item.abilities.map((a)=>{
                             return (
