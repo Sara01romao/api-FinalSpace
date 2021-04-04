@@ -40,10 +40,11 @@ function Cards() {
 
                     <div className="perso">
                       <h2>{item.name}</h2>
-                      <p>{item.species}</p>
+                      
                     </div>
-                  
+                    
                 </div>
+                <p>{item.species}</p>
                 
                 
 
