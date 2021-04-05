@@ -55,7 +55,7 @@ function Cards() {
                         <ul>
                           {item.abilities.map((a)=>{
                             return (
-                              <li>{a}</li>
+                              <li>- {a}</li>
                             )
                           })}
                     </ul>

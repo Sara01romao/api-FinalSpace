@@ -65,11 +65,12 @@ p{
   text-align: center;
   margin-top:5px ;
   font-weight: 600;
+  font-family: 'New Tegomin', serif;
 }
 
 
 .perso{
-  border: 1px solid red;
+  border: 1px solid rgba(0, 247, 255, 0.651);
   width: 300px;
   height: 80px;
   margin-bottom: 5px;
@@ -80,15 +81,16 @@ p{
   height: 52px;
   background-color: rgba(0, 0, 0, 0.404);
 
+  
 
 }
 
 .perso h2{
-  padding-top: 5px;
+  padding: 0 20px;
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(1, 247, 255);
- 
+  font-family: 'New Tegomin', serif;
  
   
 }
@@ -97,24 +99,32 @@ p{
 
 .card ul{
   list-style: none;
+  
 }
 
 .card ul li{
   width: 250px;
-  margin-left: 20px;
-  margin-bottom: 5px;
+  margin: 5px 0 5px 30px;
+
+  font-weight: 600;
+  color: rgb(116, 114, 114);
+ 
 }
 
 
 
 .descricao{
-  background-color: rosybrown;
-
+  background-color: rgb(243, 201, 252);
+  padding: 0 10px;
   height: 200px;
 }
 
 .descricao h4{
   margin: 10px 0;
+  padding-left: 20px;
   padding-top: 10px;
+
+  font-family: 'New Tegomin', serif;
+  
   
 }
