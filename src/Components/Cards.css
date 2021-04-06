@@ -30,8 +30,6 @@ header{
 
 
 .cards{
-  
-  border: 1px solid red;
   padding: 10%;
 
   display: flex;
@@ -72,13 +70,14 @@ p{
 .perso{
   border: 1px solid rgba(0, 247, 255, 0.651);
   width: 300px;
-  height: 80px;
+  height: 61px;
+
   margin-bottom: 5px;
   text-align: center;
 
   position: relative;
-  bottom: 55px;
-  height: 52px;
+  bottom: 65px;
+  
   background-color: rgba(0, 0, 0, 0.404);
 
   
@@ -86,9 +85,10 @@ p{
 }
 
 .perso h2{
-  padding: 0 20px;
+  padding: 0px 20px ;
+  margin-bottom: 10px;
   display: inline-block;
-  font-size: 18px;
+  font-size: 20px;
   color: rgb(1, 247, 255);
   font-family: 'New Tegomin', serif;
  
