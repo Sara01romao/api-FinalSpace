@@ -1,3 +1,42 @@
+
+
+
+<p align="center">
+  <img width="30%" height="100%"  src="https://user-images.githubusercontent.com/46323667/113655878-143dd700-9671-11eb-809c-31a20f2eff52.png">
+</p>
+
+
+
+<h4 align="center"> :rocket: Final Space API :rocket:</h4>
+
+
+## 💻  Sobre o Projeto
+Projeto feito para mostrar os personagens da animação Final Space, pegando por meio de uma Api as informações e usando o map para montagem dos cards.
+<p><strong>Link: https://finalspaceapi.com/docs/<strong></p>
+
+<br>
+
+## :rocket: Tecnologias Usadas
+Front-end Concluído
+```
+React JS 
+```
+
+<h6 align="center">   Home</h6>
+
+<p align="center">
+  <!--<img max-width="auto" height="auto"  src="">-->
+</p>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
