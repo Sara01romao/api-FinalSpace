@@ -52,9 +52,10 @@ header{
 }
 
 .photo{
-  border: 1px solid rgb(43, 255, 0);
   height: 300px;
   width: 300px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.295);
+
 }
 
 p{
@@ -78,7 +79,7 @@ p{
   position: relative;
   bottom: 65px;
   
-  background-color: rgba(0, 0, 0, 0.404);
+  background-color: rgba(0, 0, 0, 0.712);
 
   
 
@@ -117,6 +118,7 @@ p{
   background-color: rgb(243, 201, 252);
   padding: 0 10px;
   height: 200px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.356);
 }
 
 .descricao h4{
