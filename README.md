@@ -17,15 +17,16 @@ Projeto feito para mostrar os personagens da animação Final Space, pegando por
 <br>
 
 ## :rocket: Tecnologias Usadas
-Front-end Concluído
+Front-end 
 ```
 React JS 
 ```
 
-<h6 align="center">   Home</h6>
+<h6 align="center">   Tela</h6>
+<br>
 
 <p align="center">
-  <!--<img max-width="auto" height="auto"  src="">-->
+  <img max-width="auto" height="auto"  src="https://user-images.githubusercontent.com/46323667/113966186-fef9b180-9804-11eb-9572-8527b854488c.jpg">
 </p>
 
 
