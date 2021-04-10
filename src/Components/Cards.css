@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Roboto:wght@100;700&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-image: url('../img/andy-holmes-rCbdp8VCYhQ-unsplash.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
 
   font-family: 'Roboto', sans-serif;
-  
+
 }
 
-header{
+header {
 
   display: flex;
   align-items: center;
@@ -29,16 +29,16 @@ header{
 
 
 
-.cards{
+.cards {
   padding: 10%;
 
   display: flex;
-  flex-wrap:wrap;
- 
-  
+  flex-wrap: wrap;
+
+
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,28 +47,28 @@ header{
 
   background-color: rgb(231, 172, 255);
 
-  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
- 
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+
 }
 
-.photo{
+.photo {
   height: 300px;
   width: 300px;
   box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.295);
 
 }
 
-p{
+p {
   width: 300px;
   height: 40px;
   text-align: center;
-  margin-top:5px ;
+  margin-top: 5px;
   font-weight: 600;
   font-family: 'New Tegomin', serif;
 }
 
 
-.perso{
+.perso {
   border: 1px solid rgba(0, 247, 255, 0.651);
   width: 300px;
   height: 61px;
@@ -78,55 +78,55 @@ p{
 
   position: relative;
   bottom: 65px;
-  
+
   background-color: rgba(0, 0, 0, 0.712);
 
-  
+
 
 }
 
-.perso h2{
-  padding: 0px 20px ;
+.perso h2 {
+  padding: 0px 20px;
   margin-bottom: 10px;
   display: inline-block;
   font-size: 20px;
   color: rgb(1, 247, 255);
   font-family: 'New Tegomin', serif;
- 
-  
+
+
 }
 
 
 
-.card ul{
+.card ul {
   list-style: none;
-  
+
 }
 
-.card ul li{
+.card ul li {
   width: 250px;
   margin: 5px 0 5px 30px;
 
   font-weight: 600;
   color: rgb(116, 114, 114);
- 
+
 }
 
 
 
-.descricao{
+.descricao {
   background-color: rgb(243, 201, 252);
   padding: 0 10px;
   height: 200px;
   box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.356);
 }
 
-.descricao h4{
+.descricao h4 {
   margin: 10px 0;
   padding-left: 20px;
   padding-top: 10px;
 
   font-family: 'New Tegomin', serif;
-  
-  
+
+
 }
