@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 
 import api from '../../services/api'
-import { DivContainerHome, SectionHome} from './styles';
+import { Card, DivBanner, DivContainerHome, SectionHome} from './styles';
 
     export default function Home(){
     const [show, setShow] = useState(false)
@@ -14,7 +14,7 @@ import { DivContainerHome, SectionHome} from './styles';
 
     useEffect(()=>{
         async function loadData(){
-            const response = await api.get('character?limit=10')
+            const response = await api.get('character?limit=12')
            
             setData(response.data)
         }
@@ -30,24 +30,36 @@ import { DivContainerHome, SectionHome} from './styles';
     
 
     return(
-        <SectionHome>
-            <DivContainerHome>
-                {data.map((character)=>{
-                    return(
-                        
-                        <div key={character.id} onClick={() => {open(character); setShow(true)}}>
-                        
-                        <h1>{ character.name}</h1>
-                        <img src={character.img_url} alt="" />
-                        
-                        </div>
-                    
-                    )
-                })}
-            
-                <Modal info={modalCharacter} onClose={() => setShow(false)} show={show}/>
-            </DivContainerHome>
-        </SectionHome>
+        <div>
+            <DivBanner>
+                <div>
+                    <img src="/img/logo.png" alt="Final Space logo" />
+                </div>
+            </DivBanner>
+        
+            <SectionHome>
 
+                
+                <DivContainerHome>
+                
+                    {data.map((character)=>{
+                        return(
+                            
+                            <Card key={character.id} onClick={() => {open(character); setShow(true)}}>
+                            
+                                <img src={character.img_url} alt="" />
+
+                                <h1>{ character.name}</h1>
+                                <p>{character.species}</p>
+                            
+                            </Card>
+                        
+                        )
+                    })}
+                    
+                    <Modal info={modalCharacter} onClose={() => setShow(false)} show={show}/>
+                </DivContainerHome>
+            </SectionHome>
+        </div>
     );
 }
