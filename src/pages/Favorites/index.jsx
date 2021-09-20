@@ -1,5 +1,7 @@
 import { toast } from "react-toastify";
 import { useEffect, useState } from "react"
+import { DivSalvos } from "./styles";
+
 
 
 
@@ -28,7 +30,7 @@ export default function Favorites(){
 
 
     return(
-        <div>
+        <DivSalvos>
             salvos
 
             {list.map((item)=>{
@@ -40,6 +42,6 @@ export default function Favorites(){
                     </div>
                 )
             })}
-        </div>
+        </DivSalvos>
     )
 }

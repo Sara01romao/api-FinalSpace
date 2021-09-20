@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect} from "react";
+import { DivHeader } from "./styles";
 
 export default function Header(){
     
@@ -13,12 +14,13 @@ export default function Header(){
 
 
     return(
-        <div>
-       
-            <Link to="/">home</Link>
-            <Link to="/favorites">Favoritos </Link>
-         
-            
-        </div>
+        <DivHeader>
+            <nav>
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/favorites">Favoritos </Link></li>
+                </ul>
+            </nav>
+        </DivHeader>
     )
 }

@@ -6,7 +6,7 @@ import './App.css';
 
 export default function App() {
   return (
-    <div>
+    <div className="app">
       <Routes/>
 
        <ToastContainer autoClose={3000}/> 
