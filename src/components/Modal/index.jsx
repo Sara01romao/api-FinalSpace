@@ -42,9 +42,15 @@ export default function Modal(props){
 
                     <div className="infoTxt">
                          <h1>Modal {props.info.name}</h1>
-                         <p>Species: {props.info.species}</p>
+                         <p></p>
 
                         <div className="abilities">
+                            
+                            <div className="species">
+                                <h4>Species: </h4>
+                                <p>{props.info.species}</p>
+                               
+                            </div>
                             <h4>Abilities</h4>
                             <ul>
                                 {props.info.abilities.slice(0, 3).map((abilities) =>{

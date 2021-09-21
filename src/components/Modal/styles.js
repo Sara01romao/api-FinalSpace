@@ -14,26 +14,24 @@ export const DivModal = styled.div`
 export const ModalContainer= styled.div`
     position: fixed;
     max-width: 800px;
-    max-height: 500px;
-    height: 400px;
+   
+    max-height: 350px;
     background-color: #6332B4;
     padding: 40px 10px 10px;
     margin: auto;
     inset: 0;
-    border: 1px solid red;
-
+    border-radius: 5px;
+    
+    
 
     .buttonClose{
         border: none;
-       
         margin: 5px 10px 0px 0px;
         position: absolute;
         right: 0;
         top: 0px;
-
         font-size: 24px;
         font-weight: bold;
-
         background:  #7600D2;
         cursor: pointer;
         color: #fff;
@@ -47,7 +45,7 @@ export const ModalContainer= styled.div`
     @media (max-width: 567px){
             
            
-            height: auto;
+        max-height: 520px;
         
     }
    
@@ -61,9 +59,9 @@ export const ModalContainer= styled.div`
 export const DivInfo = styled.div`
     display: flex;
     flex-wrap: wrap;
-    padding: 30px 0px 10px;
-    border: 1px solid red;
-    background-color: #fff;
+    padding: 10px 0px 10px;
+    
+    background-color: #EDFCFF;
 
 
 
@@ -71,7 +69,7 @@ export const DivInfo = styled.div`
         flex: 1;
         display: flex;
         justify-content: center;
-    
+        
     
 
     }
@@ -80,6 +78,7 @@ export const DivInfo = styled.div`
         width: 300px;
         height: 210px;
         object-fit: contain;
+       
         
     }
 
@@ -87,56 +86,101 @@ export const DivInfo = styled.div`
         flex: 1;
         display: flex;
         flex-direction: column;
+        
+        padding: 0px 50px;
+        
     }
 
+    .abilities{
+            
+            margin: 10px 0;
+            border: 1px solid #35D1F3;
+            padding: 0px 30px 10px;
+            
+        }
+
     .favBtn{
-        height: 30px;
+        height: 35px;
+        margin-top: 30px;
+        background-color: #000;
+        border:2px solid #7600D2;
+        color: #fff;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+        
+        
     }
-   
+
+    .favBtn:hover{
+        background-color:#7600D2;
+    }
+
+    .species{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .species p{
+       
+        margin-left: 5px;
+        color: #7600D2;
+        overflow: hidden;
+        height: 20px;
+       
+    }
+
+    ul{
+                
+        margin-left: 20px;
+        list-style: square;
+        color: #7600D2;
+        
+    }
+
+    
+
+
     
 
     @media (max-width: 567px){
             
-            flex-direction: column;
-         
+        flex-direction: column;
+        
+       
+        .infoTxt{
+        
+            padding: 0px 0px;
+        }
 
             
-            h1{
-                text-align: center;
-            }
+        h1{
+            text-align: center;
+        }
 
-            p{
-                text-align: center;
-                font-size: 14px;
-                color: #7600D2;
-            }
-
-            .abilities{
-                width: 300px;
-                margin: 20px auto;
-                border: 1px solid red;
-                padding: 0px 30px;
-                
-            }
-
-            ul{
-                
-                margin-left: 20px;
-                list-style: square;
-                color: #7600D2;
-                
-            }
-
-            ul li{
-                
-            }
-
-            .favBtn{
-                width: 200px;
-                margin: 0px auto;
-
+        .abilities{
+            width: 250px;
+            margin: 15px auto 10px;
+            padding: 0px 30px 5px;
             
-            }
+        }
+
+        ul{
+            
+            margin-left: 20px;
+            list-style: square;
+            color: #7600D2;
+            
+        }
+
+        .favBtn{
+            width: 250px;
+            margin: 0px auto;
+
+        
+        }
     }
 
 `
