@@ -1,10 +1,7 @@
 import { toast } from "react-toastify";
 import { useEffect, useState } from "react"
 import { DivSalvos } from "./styles";
-
-
-
-
+import {FaHeart, FaTrash} from 'react-icons/fa';
 
 export default function Favorites(){
     const [list, setList] = useState([]);
@@ -31,17 +28,24 @@ export default function Favorites(){
 
     return(
         <DivSalvos>
-            salvos
+            <h1>Favoritos <FaHeart/> </h1>
+            
+            <div className="container">
 
-            {list.map((item)=>{
-                return(
-                    <div key={item.id}>
-                    {item.name}
+       
+                {list.map((item)=>{
+                    return(
+                        <div className="card" key={item.id}>
+                            <div>
+                                <img src={item.img_url} alt="" />
+                            </div>
+                            <h2>{item.name}</h2>
 
-                    <button onClick={()=> remove(item.id)}>Excluir</button>
-                    </div>
-                )
-            })}
+                        <button onClick={()=> remove(item.id)}><FaTrash/>Excluir</button>
+                        </div>
+                    )
+                })}
+            </div>
         </DivSalvos>
     )
 }
