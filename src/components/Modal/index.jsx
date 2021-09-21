@@ -1,11 +1,11 @@
 import { toast } from "react-toastify";
-import './style.css'
+import './styles.js'
+import { DivModal, ModalContainer, DivInfo } from "./styles.js";
 
 export default function Modal(props){
     if(!props.show){
         return null
     }
-
 
     function addFavorite(valor){
     
@@ -30,35 +30,37 @@ export default function Modal(props){
     }
 
     return(
-        <div className="modal">
+        <DivModal>
             
-            <div className="modal-container">
+            <ModalContainer>
                 <button className="buttonClose" onClick={props.onClose}>X</button>
 
-                <div className="info">
+                < DivInfo >
                     <div className="infoImg">
                         <img src={props.info.img_url} alt="" />
                     </div>
 
                     <div className="infoTxt">
                          <h1>Modal {props.info.name}</h1>
-                         <small>{props.info.species}</small>
+                         <p>Species: {props.info.species}</p>
 
+                        <div className="abilities">
+                            <h4>Abilities</h4>
+                            <ul>
+                                {props.info.abilities.slice(0, 3).map((abilities) =>{
+                                    return(
+                                        <li>{abilities}</li>
+                                    )
+                                })}
+                            </ul>
+                         </div>
 
-                         <ul>
-                             {props.info.abilities.slice(0, 3).map((abilities) =>{
-                                 return(
-                                     <li>{abilities}</li>
-                                 )
-                             })}
-                         </ul>
-
-                         <button onClick={() => addFavorite(props.info)}>Add Favoritos</button>
+                         <button className="favBtn" onClick={() => addFavorite(props.info)}>Add Favoritos</button>
                     </div>
-                </div>
+                </DivInfo >
 
-            </div>
+            </ModalContainer>
        
-        </div>
+        </DivModal>
     )
 }
