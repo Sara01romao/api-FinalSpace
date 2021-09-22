@@ -29,6 +29,7 @@ export const DivHeader = styled.header`
     nav ul{
         display: flex;
         justify-content: flex-end;
+        align-items: center;
     }
 
     nav ul li:first-child{
@@ -45,6 +46,7 @@ export const DivHeader = styled.header`
         color: #fff;
         text-decoration: none;
         font-weight: 700;
+        font-size: 18px;
         
     }
 
@@ -54,8 +56,15 @@ export const DivHeader = styled.header`
     }
 
     .favLink{
-        border: 1px solid #35D1F3;
        
+        display: flex;
+        align-items: center;
+       
+    }
+
+    .favLink svg{
+        width: 15px;
+        height: 15px;
     }
 
 `

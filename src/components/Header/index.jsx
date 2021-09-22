@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useEffect} from "react";
 import { DivHeader } from "./styles";
-import { FaBeer, FaRocket} from 'react-icons/fa';
+import { FaHeart, FaRocket} from 'react-icons/fa';
+
 
 export default function Header(){
     
@@ -20,7 +21,7 @@ export default function Header(){
             <Link to="/"> < FaRocket /></Link>
                 <ul>
                     <li><Link to="/">Home</Link></li>
-                    <li className="favLink"><Link to="/favorites">Favoritos </Link></li>
+                    <li className="favLink"><Link to="/favorites">Favoritos <FaHeart/> </Link></li>
                 </ul>
             </nav>
         </DivHeader>
