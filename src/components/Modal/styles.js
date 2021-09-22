@@ -16,7 +16,7 @@ export const ModalContainer= styled.div`
     max-width: 800px;
    
     max-height: 350px;
-    background-color: #6332B4;
+    background: #050385 80%;
     padding: 40px 10px 10px;
     margin: auto;
     inset: 0;
@@ -32,14 +32,14 @@ export const ModalContainer= styled.div`
         top: 0px;
         font-size: 24px;
         font-weight: bold;
-        background:  #7600D2;
+        background:  transparent;
         cursor: pointer;
         color: #fff;
         
         }
 
     .buttonClose:hover{
-        color: #000;
+        color: #35D1F3;
     }
 
     @media (max-width: 567px){
@@ -102,9 +102,9 @@ export const DivInfo = styled.div`
     .favBtn{
         height: 35px;
         margin-top: 30px;
-        background-color: #000;
-        border:2px solid #7600D2;
-        color: #fff;
+        background-color: #00BFEF;
+        border:none;
+        color: #000;
         font-weight: bold;
         font-size: 16px;
         cursor: pointer;
@@ -113,7 +113,7 @@ export const DivInfo = styled.div`
     }
 
     .favBtn:hover{
-        background-color:#7600D2;
+        background-color:#3BD5FC;
     }
 
     .species{
@@ -126,7 +126,7 @@ export const DivInfo = styled.div`
     .species p{
        
         margin-left: 5px;
-        color: #7600D2;
+        color: #2F03E2;
         overflow: hidden;
         height: 20px;
        
@@ -136,7 +136,7 @@ export const DivInfo = styled.div`
                 
         margin-left: 20px;
         list-style: square;
-        color: #7600D2;
+        color: #2F03E2;
         
     }
 
@@ -171,7 +171,7 @@ export const DivInfo = styled.div`
             
             margin-left: 20px;
             list-style: square;
-            color: #7600D2;
+        
             
         }
 

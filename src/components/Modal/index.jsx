@@ -41,7 +41,7 @@ export default function Modal(props){
                     </div>
 
                     <div className="infoTxt">
-                         <h1>Modal {props.info.name}</h1>
+                         <h1>{props.info.name}</h1>
                          <p></p>
 
                         <div className="abilities">

@@ -9,7 +9,7 @@ export default function App() {
     <div className="app">
       <Routes/>
 
-       <ToastContainer autoClose={3000}/> 
+       <ToastContainer autoClose={2000}/> 
     </div>
     
   );
