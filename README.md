@@ -13,7 +13,7 @@
 ## 💻  Sobre o Projeto
 Projeto feito para mostrar os personagens da animação Final Space, pegando por meio de uma Api as informações. Como funcionalidade é possivel salvar e excluir da lista de favoritos os personagens. 
 <p><strong>Link: https://finalspaceapi.com/docs/<strong></p>
-
+  
 <br>
 
 ## :rocket: Tecnologias Usadas
@@ -24,6 +24,8 @@ React Icons
 Toastify
 React Router 
 ```
+  
+  <p><strong>Acessar: https://final-space-favorites.netlify.app/<strong></p>
 
 <h6 align="center">   Tela Home</h6>
 <br>
