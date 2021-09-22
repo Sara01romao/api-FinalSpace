@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const DivSalvos = styled.div`
-    height: 100vmax;
+    
 
     h1{
         text-align: center;
-        color:#fff;
+        color:#000;
         margin: 50px 0px;
     }
 
@@ -30,11 +30,12 @@ export const DivSalvos = styled.div`
         align-items: center;
         justify-content: space-around;
         width: 90%;
-        border: 3px solid #000;
+        color: #000;
         border-radius: 5px;
-        background: linear-gradient( #fff 16%, #35D1F3);
+        background: #97c0ff;
         margin-bottom: 20px;
         padding:10px;
+        box-shadow: 7px 9px 15px -7px #1a5258;
        
     
     }
@@ -58,17 +59,16 @@ export const DivSalvos = styled.div`
         align-items: center;
         justify-content: center;
         background-color: transparent;
-        border: 3px solid #000;
+        border: 5px solid #000;
+        color: #000;
         cursor: pointer;
         font-weight: bold;
         margin-top: 10px;
     }
 
     .card button:hover{
-        
-        color: #fff;
         background-color: #000;
-       
+        color: #fff;
     }
     .card button svg{
         margin-right: 10px;
@@ -83,7 +83,7 @@ export const DivSalvos = styled.div`
             margin: 0px auto 20px;
             
             
-            border: 1px solid red;
+        
         }
     }
 

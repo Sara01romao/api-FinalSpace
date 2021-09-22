@@ -73,6 +73,7 @@ export const Card= styled.div`
         opacity: 0.8 ;
         transform: rotate(5deg);
         box-shadow: 12px 12px 2px 1px rgb(1 19 24 / 20%);
+        background: #050385 80%;
         
     }
 
