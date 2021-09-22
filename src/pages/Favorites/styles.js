@@ -1,10 +1,17 @@
 import styled from "styled-components";
 
 export const DivSalvos = styled.div`
-    height: 100Vh;
-    background: linear-gradient(#cd98f7 5%,#8572ec 26%, #35D1F3);
+    height: 100vmax;
 
+    h1{
+        text-align: center;
+        color:#fff;
+        margin: 50px 0px;
+    }
 
+    h1 svg{
+        color: #E7030E;
+    }
     
 
     .container{
@@ -12,8 +19,8 @@ export const DivSalvos = styled.div`
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        border: 1px solid red;
         margin: 0 auto;
+        
 
     }
 
@@ -23,8 +30,9 @@ export const DivSalvos = styled.div`
         align-items: center;
         justify-content: space-around;
         width: 90%;
-        border: 1px solid red;
-        background: #fff;
+        border: 3px solid #000;
+        border-radius: 5px;
+        background: linear-gradient( #fff 16%, #35D1F3);
         margin-bottom: 20px;
         padding:10px;
        
@@ -40,11 +48,30 @@ export const DivSalvos = styled.div`
     .card h2{
         width: 150px;
         text-align: center;
+        
     }
 
     .card button{
         height: 40px;
-        width: 200px
+        width: 200px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: 3px solid #000;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .card button:hover{
+        
+        color: #fff;
+        background-color: #000;
+       
+    }
+    .card button svg{
+        margin-right: 10px;
     }
 
     @media (max-width:768px){
@@ -53,7 +80,7 @@ export const DivSalvos = styled.div`
             flex-direction: column;
            
             width: 80%;
-            margin: 0px auto;
+            margin: 0px auto 20px;
             
             
             border: 1px solid red;
